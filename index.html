@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Archita</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-light py-5"> 
+  <body style="overflow-x: hidden">
+    <nav class="navbar navbar-fixed-top navbar-light ">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">AB</a>
@@ -30,35 +27,43 @@
         </ul>
       </div>
     </nav>
-
     <div class="section1" id="aboutme">
-      <h3>About Me</h3>
-      <div class="row py-5 mt-5">
-        <div class="col-12 col-md-5 p-5">
+      <h1>About Me</h1>
+      <div class="row">
+        <div class="col-12 col-md-3 text-center">
           <img
-            class="myimg rounded float-start"
-            src="images/crater1.jpg"
+            class="image-fluid"
+            src="images/me3.png"
             alt="Me and snow"
           />
         </div>
-        <div class="aboutme col-12 col-md-7 p-5">
+        <div class="aboutme col-12 col-md-8">
           <h2 id="aboutme">Hi, I'm Archita!</h2>
           <h3>(she/her)</h3>
           <p class="mt-5">
-            My love for computer science, which I had initially developed through my enthusiasm for coding, solidified after my team won our first national hackathon, where the app we created was used to assist small businesses. 
-            I believe that in this new era of technology, Computer Science can be used as tool of assistance for the needy.
-            I got an excellent opportunity as a research intern in Indian National Center for Ocean Information Services (INCOIS). 
-            I was blown away with the extensive use of Computer Science in Oceanography as well as in other branches of sciences. 
-            Aiming to hone my skills, I started my graduate studies in PSU. My area of interests are Computer science, Mathematics and gaming.
-            I would like to see myself in a job where there would be a creative fusion between these disciplines.
-            Languages I am good with are C, C++, Java, python, and PostgreSQL. The concepts I am learnt and implemented in projects are Data Structures, OOP, OS, Algorithms, and their computational complexity.
-            If you think that my skills can add value to your company please feel free to reach out!
+            My love for computer science, which I had initially developed
+            through my enthusiasm for coding, solidified after my team won our
+            first hackathon, where the app we created was used to assist small
+            businesses. I believe that in this new era of technology, Computer
+            Science can be used as tool of assistance for the needy. I got an
+            excellent opportunity as a research intern in Indian National Center
+            for Ocean Information Services (INCOIS). I was blown away with the
+            extensive use of Computer Science in Oceanography as well as in
+            other branches of sciences. Aiming to hone my skills, I started my
+            graduate studies in PSU. My area of interests are Computer science,
+            Mathematics and gaming. I would like to see myself in a job where
+            there would be a creative fusion between these disciplines.
+            Languages I am good with are C, C++, Java, python, and PostgreSQL.
+            The concepts I am learnt and implemented in projects are Data
+            Structures, OOP, OS, Algorithms, and their computational complexity.
+            If you think that my skills can add value to your company please
+            feel free to reach out!
           </p>
         </div>
       </div>
     </div>
     <div class="section2" id="Resume">
-      <h1>Resume</h1>
+      <h3>Resume</h3>
       <p>a collapsable dropdown menu of my education and internships</p>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias pariatur
@@ -101,13 +106,27 @@
     </div>
     <div class="section4" id="contactme">
       <h1>Contact Me</h1>
-      <p>A responsive contact form with ajax and bootstrap forms</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-        adipisci obcaecati nobis ut distinctio vel ab esse sequi praesentium
-        repudiandae, qui dolor nulla magni. Odio illo corrupti aliquam modi
-        animi?
-      </p>
+      <div class="row my-5">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+          <div class="row mb-3">
+            <div class="col">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="This could be you!">
+            </div>
+            <div class="col">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="hello@gmail.com">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="contact-form" class="form-label">Message</label>
+            <textarea class="form-control" id="contact-form" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-outline-primary">Reset</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

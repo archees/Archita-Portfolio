@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -48,7 +48,7 @@
 
     </div>
     <div class="section1 my-5" id="aboutme">
-      <h1>About Me</h1>
+      <h1 class="section-head">About Me</h1>
       <div class="row">
         <div class="col-12 col-md-5 mt-5">
           <img
@@ -78,31 +78,31 @@
       </div>
     </div>
     <div class="section2 my-5" id="resume">
-      <h1 style="text-align:center">Resume</h1>
+      <h1 class="section-head">Resume</h1>
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 my-5">
           <h2>Education</h2>
           <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-action flex-column align-items-start">
+            <a class="list-group-item  flex-column align-items-start">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Portland State University</h5>
               </div>
               <p class="mb-1">Master of Science in Computer Science</p>
               <small class="text-muted">GPA: 3.89<br>Year: 2022-Present</small>
             </a>
-            <a class="list-group-item list-group-item-action flex-column align-items-start">
+            <a class="list-group-item flex-column align-items-start">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">JNTUH</h5>
               </div>
               <p class="mb-1">Bachelor of Technology, Computer Science</p>
-              <small class="text-muted">CGPA: 7.8 <br>2016-2020</small>
+              <small class="text-muted">CGPA: 7.8 <br>Year: 2016-2020</small>
             </a>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 my-5">
           <h2>Experience</h2>
           <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-action flex-column align-items-start">
+            <a class="list-group-item flex-column align-items-start">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">INCOIS</h5>
               </div>
@@ -112,7 +112,7 @@
                 <b>Projects:</b> Argo Float Classification, Sea Surface Temperature Prediction
               </small>
             </a>
-            <a class="list-group-item list-group-item-action flex-column align-items-start">
+            <a class="list-group-item flex-column align-items-start">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Mridsoft</h5>
               </div>
@@ -127,17 +127,40 @@
       </div>
     </div>
     <div class="section3 my-5" id="projects">
-      <h1>Projects</h1>
-      <p>An expandable card template about my projects</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad ducimus
-        sapiente praesentium similique dolor aspernatur, tempora, cupiditate
-        hic, unde obcaecati. Consequatur a animi autem quod sint earum rerum
-        impedit!
-      </p>
+      <h1 class="section-head">Projects</h1>
+       <div class="d-flex flex-row">
+        <div class="card-deck justify-content-center p-2 mt-5">
+          <div class="card col-sm-4 col-md-4 col-lg-4">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="images/chatroom.jpg" class="img-fluid"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">CLI Internet Relay Chat</h5>
+              <p class="card-text">A Simple Command Line Interface for Internet Relay Chat using python's FTP library</p>
+              <a href="#!" class="btn btn-primary">Project</a>
+            </div>
+          </div>
+          <div class="card col-sm-4 col-md-4 col-lg-4">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="images/floats.jpg" class="img-fluid"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Profile Classification</h5>
+              <p class="card-text">Classification of Argo floats(devices that float in the the ocean) using speed,velocity and temperature of the ocean to detect the functioning of the floats </p>
+              <a href="#!" class="btn btn-primary">Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section4 my-5" id="contactme">
-      <h1>Contact Me</h1>
+      <h1 class="section-head">Contact Me</h1>
       <div class="row my-5">
         <form id="contact-form">
           <div class="row mb-3">

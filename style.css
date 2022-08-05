@@ -13,7 +13,8 @@ body {
 }  */
 .aboutme {
     font-size: 1.0rem;;
-    text-align:justify; 
+    text-align:justify;
+    background-color: aliceblue; 
     
 }
 

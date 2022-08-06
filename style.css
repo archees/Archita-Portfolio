@@ -3,22 +3,21 @@
   }
 body {
     position: relative;
+
 } 
-/* .section1{
-    height:fit-content;
-    background-color: aliceblue;
-    background-size: fill;
-    position:relative;  
-    align-items: center;
-}  */
+.section-head{
+  text-align: center;
+}
+
 .aboutme {
     font-size: 1.0rem;;
     text-align:justify;
-    background-color: aliceblue; 
-    
+    border: solid black 2px; 
+    align-self: center;
 }
 
   *::before,
   *::after {
     box-sizing: border-box;
   }
+  

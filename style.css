@@ -1,6 +1,7 @@
-* {
-    box-sizing: border-box;
-  }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
     position: relative;
 
@@ -8,16 +9,26 @@ body {
 .section-head{
   text-align: center;
 }
-
+.section0{
+  font-size: 1.25rem;
+  align-content: center;
+}
+.intro{
+  vertical-align:auto;
+  text-align: center;
+}
 .aboutme {
-    font-size: 1.0rem;;
+    font-size: 1.15rem;
     text-align:justify;
-    border: solid black 2px; 
     align-self: center;
 }
+.navbar{
+  background: transparent!important;
+  transition: 500ms ease;
+}
+.scrolled {
+background: rgba(0, 0, 0, 1)!important;
+transition: background-color 1s ease 0s;
+}
 
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
   

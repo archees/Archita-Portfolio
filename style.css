@@ -22,6 +22,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+#scrollbtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px;
+  z-index: 99; 
+  color: white;
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  }
 
 
   
